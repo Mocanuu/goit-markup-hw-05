@@ -35,7 +35,9 @@
 
           <ul class="list">
             <li class="ul-list-words">
-              <a href="./index.html" class="list-link link">Studio</a>
+              <a href="./index.html" class="list-link link after-studio"
+                >Studio</a
+              >
             </li>
             <li class="ul-list-words">
               <a href="./portfolio.html" class="list-link link">Portfolio</a>
@@ -71,25 +73,9 @@
           <!--Title-->
           <h1 class="title">Effective Solutions for Your Business</h1>
           <!--Button Order Service-->
-          <button class="order-service-button" type="button">
+          <button class="order-service-button" type="button" data-modal-open>
             Order Service
           </button>
-          <div class="data-modal" id="data-modal">
-            <div class="data-modal-box">
-              <button class="data-modal-button" type="button">
-                <svg
-                  class="data-modal-icon"
-                  width="24"
-                  height="24"
-                  id="closemodal"
-                >
-                  <use
-                    href="./images/icons.svg#icon-close-black-18dp-2-1"
-                  ></use>
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -483,7 +469,16 @@
         </div>
       </div>
     </footer>
+    <div class="div-modal is-hidden" data-modal>
+      <div class="div-modal-window">
+        <button class="modal-button" type="button" data-modal-close>
+          <svg class="modal-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
-    <script src="./js/modal.js"></script>
+    <script src="./modal.js"></script>
   </body>
 </html>

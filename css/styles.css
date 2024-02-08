@@ -445,21 +445,24 @@ p {
 }
 
 .nav-button {
-  color: var(--IRIS);
-  background-color: var(--CLOUD);
-  font-family: var(--text-font-family);
-  border: 1px solid var(--CORNFLOWER);
+  color: #4d5ae5;
+  background-color: #f4f4fd;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 12px 24px;
-  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ease-button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
 }
 
 .nav-button:hover {
@@ -468,6 +471,10 @@ p {
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .nav-button:focus {
@@ -476,6 +483,10 @@ p {
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .images-list {
@@ -756,12 +767,20 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-svg:hover,
+.modal-svg:hover {
+  color: #ffffff;
+}
+
 .modal-svg:focus {
   color: #ffffff;
 }
 
-.modal-button :hover,
+.modal-button :hover {
+  background-color: #404bbf;
+  border: none;
+  fill: #fff;
+}
+
 .modal-button :focus {
   background-color: #404bbf;
   border: none;
@@ -771,6 +790,7 @@ p {
 .app-stylish {
   position: relative;
   overflow: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .app-stylish p {
@@ -787,7 +807,7 @@ p {
   padding: 40px 32px;
   opacity: 0.9;
   transform: translateY(100%);
-  transition: transform 250ms #f4f4fd;
+  transition: transform 250ms ease-in-out #f4f4fd;
 }
 
 .link-href-apps:hover p,
